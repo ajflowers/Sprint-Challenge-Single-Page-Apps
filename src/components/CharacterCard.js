@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, Image} from "semantic-ui-react";
+import {Card, Image, Icon} from "semantic-ui-react";
 
 export default function CharacterCard(props) {
 
@@ -10,8 +10,16 @@ export default function CharacterCard(props) {
         <Card.Header>{props.name}</Card.Header>
         <Card.Meta>
           <span className="species-status">{props.species}; {props.status}.</span>
-          
+
         </Card.Meta>
+        <Card.Description>
+          <p>Origin: {props.origin.name}</p>
+          <p>Location: {props.location.name}</p>
+        </Card.Description>
+      </Card.Content>
+      <Card.Content extra>
+        <Icon name="tv" />
+        {props.episode.length} Epiosodes
       </Card.Content>
     </Card>
   );
