@@ -3,12 +3,14 @@ import React from "react";
 import Header from "./components/Header.js";
 import CharacterList from "./components/CharacterList";
 import LocationsList from "./components/LocationsList";
+import EpisodesList from "./components/EpisodesList";
 
 export default function App() {
   return (
     <main>
       <Header />
-      <LocationsList />
+      <EpisodesList />
+      {/* <LocationsList /> */}
       {/* <CharacterList /> */}
       {/* <TabNav /> */}
     </main>

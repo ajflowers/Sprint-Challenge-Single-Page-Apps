@@ -5,10 +5,10 @@ import {Card, Icon} from "semantic-ui-react";
 export default function LocationCard({ name, type, dimension, residents }) {
   
   const extra = (
-    <a>
+    <div>
       <Icon name="user" />
       {residents} residents
-    </a>
+    </div>
   )
   
   return (

@@ -16,12 +16,9 @@ export default function LocationsList() {
           console.log(locationList);
           setLocations(locationList);
         })
-
         .catch(err => {
           console.log(err);
         })
-    
-
     }, [searchURL]);
 
     return (
@@ -36,9 +33,6 @@ export default function LocationsList() {
                 />
             ))
             }
-
         </section>
     )
-
-
 }
